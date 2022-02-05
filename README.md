@@ -1,0 +1,2 @@
+# smdox
+ScoreMaster documentation
