@@ -1,34 +1,45 @@
-# Scoring Methods
+# Empowering Rallymasters - scoring methods & penalties
 
-ScoreMaster provides automatic processing for the scoring methods described below. If you wish to make use of a scoring mechanism not included here, please speak to Bob.
+ScoreMaster provides automatic processing for the scoring methods and penalties described below. If you wish to make use of a scoring mechanism not included here, please speak to Bob. This is not meant to be a complete specification of the methods described. If you need the full nerdy details, speak to Bob.
 
 This document is not concerned with *bonus claim* methods, only with the arithmetic involved in calculating a score.
 
-## Definitions
+## Some definitions
 Points
 : A points value is an integer (whole number), fractions are not allowed. In general a points value can be positive or negative.
+
+Bonus code
+: A unique name comprising letters and digits only. Spaces and punctuation are forbidden. All letters must be uppercase. 
+
+As far as the system is concerned, bonus codes are alphanumeric even when they are all numeric. In order to keep them presented in the correct sequence they should all contain the same number of digits. Use leading '0's to pad the codes or start from, say, 11 or 111 instead of 1.
+
+Combo code
+: A unique name as with an ordinary bonus code. Letters may be upper or lowercase but AA23 is the same as aa23, Aa23 and aA23.
 
 ## Simple bonus points
 Each bonus scores a specific number of points.
 
 ## Variable bonus points
-Each bonus specifies a default value (which might be zero or even negative). At claim time the actual value of the bonus must be entered manually.
+Each bonus specifies a default value (which might be zero or even negative). At claim time the actual value of the bonus must be entered manually. This might be used for example when a bonus includes a clock face or a varying number of flags. This facility should be used sparingly as it has a significant impact on scoring efficiency.
 
 ## Simple combination bonus
-A combination bonus (combo) specifies a list of underlying bonuses (which might include [some] other combos). Each combo scores a specific, fixed, number of points.
+A combination bonus (combo) specifies a list of underlying bonuses (which might include [some] other combos). Each combo scores a specific, fixed, number of points. This is in addition to the scores of the underlying bonuses.
+
+Any combos included as underlying bonuses must be coded alphanumerically lower than the current combo code. Combo "A12" cannot depend on combo "A13" or "B1".
 
 ## Variable combination bonus
 A variable combo specifies a minimum number of underlying bonuses (rather than 'all' for a simple combo). Each combo scores a specific number of points depending on the number of underlying bonuses scored between the minimum and all. A simple example:-
 
 Combo *CLUBS* has underlying bonuses *MANU*,*CHELSEA*,*ARSENAL*,*RANGERS*,*ROVERS*. The combo will be scored if at least three underlying bonuses are scored. The value of the combo is either 100, 200 or 600 points. 
 
-## Compulsory bonuses
-Any ordinary or combination bonus can be flagged as being compulsory. Failure to score a compulsory bonus results in DNF.
+
+## Questions & answers
+Ordinary bonuses may have associated questions which allow for the award of additional points when correctly answered. The question/answer will be worth a fixed number of points, the value being set for the rally as a whole rather than for individual bonuses. The extra points are only awarded if the underlying bonus is correctly claimed.
 
 ## Complex methods
 Complex methods involve from one to nine sets of categories which are specified for each bonus or combo. Common sets are *Country*, *County*, *Industry*, *Building type*, etc.  For example, an ordinary bonus *F01* might specify *Country*=France, *Industry*=Farming.
 
-In general, the idea is to act on groups of bonuses rather than each bonus. Typically, the first relevant bonus is unaffected by the complex method but two or more will be.
+In general, the idea is to generate a score using groups of bonuses rather than individual bonuses. Typically, the first relevant bonus is unaffected by the complex method but two or more will be.
 
 Complex methods can be applied at three levels:- those which affect the individual bonus scores; those which reward sequences of bonuses; those which reward or punish collections of bonuses. Methods at each level can be combined both with the basic bonus scores and other levels.
 
@@ -40,7 +51,7 @@ The classic example of this method is the 2017 Brit Butt Rally in which the valu
 Relatively complex arithmetic can be used in this method. Speak to Bob if you want to know more.
 
 ### Sequences
-**Uninterrupted** membership of a particular category can be used to award extra points. For example, three consecutive farms results in doubling the points awarded for the farm bonuses. The extra points will always be a multiple of the sum of the points scored by the relevant bonuses.
+**Uninterrupted** claiming of a particular category can be used to award extra points. For example, three consecutive farms results in doubling the points awarded for the farm bonuses. The extra points will always be a multiple of the sum of the points scored by the relevant bonuses. The "uninterrupted" refers to the order of bonus claiming, not the proximity of bonuses within a group. eg. An entrant claims M1, M2, F1, M3: this gives an uninterrupted sequence (US) of two 'M's, not three. Claiming M1, M3, M5, F2 gives a US of three Ms.
 
 ### Collection of bonuses
 This can be used to award extra points based on the number of bonuses scored within a category or the number of categories scored within a set. The criterion at this stage is simple group membership, order of scoring, etc are not relevant.
@@ -48,3 +59,38 @@ This can be used to award extra points based on the number of bonuses scored wit
 This method may also be used to force DNF in the event of too many/not enough categories being scored.
 
 Speak to Bob if you want to know more.
+
+---
+
+## Penalties
+Several penalty conditions can be easily penalised by the system. Additionally, arbitrary penalties can be imposed using an extra bonus code.
+
+### Compulsory bonuses
+Any ordinary or combination bonus can be flagged as being compulsory. Failure to score a compulsory bonus results in DNF.
+
+### Minimum points
+It is possible to specify a minimum number of points (even a negative number) below which entrants would be DNF.
+
+### Percentage points deduction
+This is typically used to punish sloppy bonus claims, 10% being the usual figure. The percentage used is defined for the rally as a whole rather than for individual or classes of bonus. It always requires the rally team to tick the box manually. Only one such provision can be defined.
+
+### Distance penalties
+Distance travelled can be used to penalise entrants. Two hard limits, not far enough and too far, can be used as DNF triggers. It is also possible to apply a points penalty for travelling too far as either a fixed number of points (> 250 miles = -500 points) or a number of points per mile. 
+
+Each rally has an official unit of distance, either miles or kilometres. Individual bikes' odometers will read either miles or kilometres and be converted by the system, if necessary, to the rally unit.  "Points per mile" will actually be points per kilometre in kilometre rallies.
+
+### Time penalties
+Each rally runs from the official start time to the official finish time. To allow for staggered starts, that timespan can be longer than the permitted number of hours. (eg. 8 hour rally runs from 0800 to 1800). An entrant finishing after his 8 hours or later than the official finish time is DNF.
+
+Within the rally time window it's possible to impose points penalties, perhaps to encourage early check-in, either as a fixed number of points or as points per minute. Several such windows can be specified with different points values, they need not be confined to the end of the rally.
+
+### Speed penalties
+It is possible to impose a fixed points penalty, or DNF, in response to excessive speed. Golly, that's bold eh! Now, before you get all excited:-
+
+- we are not the Police. It's not our job to enforce the law.
+- we are not the Police. We don't have wide-ranging legal powers.
+- we are not the Police. We don't have massive funding and high-tech infrastructure.
+
+The speed monitored by us is calculated as (Check-in - Check-out - Rest) / CorrectedDistance. Distance is calculated using odometer readings, corrected if an odo check ride was performed. Example: Rally starts 0900. Roger records 1 hour rest bonus and checks-in at 1644 having travelled 323 miles. Rally time 7h 44, less rest = 6h 44. 323 / 6h 44 = 47.9mph.
+
+Did that involve any actual speeding? Who knows? Maybe it did, maybe it didn't, it's not relevant.
