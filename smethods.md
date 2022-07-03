@@ -4,6 +4,8 @@ ScoreMaster provides automatic processing for the scoring methods and penalties 
 
 This document is not concerned with *bonus claim* methods, only with the arithmetic involved in calculating a score.
 
+This document is also not concerned with policy matters, it merely details what's practicable using the facilities provided.
+
 ## Some definitions
 Points
 : A points value is an integer (whole number), fractions are not allowed. In general a points value can be positive or negative.
@@ -15,6 +17,8 @@ As far as the system is concerned, bonus codes are alphanumeric even when they a
 
 Combo code
 : A unique name as with an ordinary bonus code. Letters may be upper or lowercase but AA23 is the same as aa23, Aa23 and aA23.
+
+---
 
 ## Simple bonus points
 Each bonus scores a specific number of points.
@@ -36,6 +40,8 @@ Combo *CLUBS* has underlying bonuses *MANU*,*CHELSEA*,*ARSENAL*,*RANGERS*,*ROVER
 ## Questions & answers
 Ordinary bonuses may have associated questions which allow for the award of additional points when correctly answered. The question/answer will be worth a fixed number of points, the value being set for the rally as a whole rather than for individual bonuses. The extra points are only awarded if the underlying bonus is correctly claimed.
 
+---
+
 ## Complex methods
 Complex methods involve from one to nine sets of categories which are specified for each bonus or combo. Common sets are *Country*, *County*, *Industry*, *Building type*, etc.  For example, an ordinary bonus *F01* might specify *Country*=France, *Industry*=Farming.
 
@@ -51,7 +57,7 @@ The classic example of this method is the 2017 Brit Butt Rally in which the valu
 Relatively complex arithmetic can be used in this method. Speak to Bob if you want to know more.
 
 ### Sequences
-**Uninterrupted** claiming of a particular category can be used to award extra points. For example, three consecutive farms results in doubling the points awarded for the farm bonuses. The extra points will always be a multiple of the sum of the points scored by the relevant bonuses. The "uninterrupted" refers to the order of bonus claiming, not the proximity of bonuses within a group. eg. An entrant claims M1, M2, F1, M3: this gives an uninterrupted sequence (US) of two 'M's, not three. Claiming M1, M3, M5, F2 gives a US of three Ms.
+**Uninterrupted** claiming of a particular category can be used to award extra points. For example, three consecutive farms results in doubling the points awarded for the farm bonuses. The extra points can be either a multiple of the sum of the points scored by the relevant bonuses or a fixed number of extra points. The "uninterrupted" refers to the order of bonus claiming, not the proximity of bonuses within a group. eg. An entrant claims M1, M2, F1, M3: this gives an uninterrupted sequence (US) of two 'M's, not three. Claiming M1, M3, M5, F2 gives a US of three Ms.
 
 ### Collection of bonuses
 This can be used to award extra points based on the number of bonuses scored within a category or the number of categories scored within a set. The criterion at this stage is simple group membership, order of scoring, etc are not relevant.
@@ -63,13 +69,13 @@ Speak to Bob if you want to know more.
 ---
 
 ## Penalties
-Several penalty conditions can be easily penalised by the system. Additionally, arbitrary penalties can be imposed using an extra bonus code.
+Several penalty conditions can be easily penalised by the system. Additionally, arbitrary penalties can be imposed by making use of an extra bonus code. eg. 'ODDSOCKS' = -100 points, 'POLITEVEST' = -100000 points.
 
 ### Compulsory bonuses
 Any ordinary or combination bonus can be flagged as being compulsory. Failure to score a compulsory bonus results in DNF.
 
 ### Minimum points
-It is possible to specify a minimum number of points (even a negative number) below which entrants would be DNF.
+It is possible to specify a minimum number of points below which entrants would be DNF.
 
 ### Percentage points deduction
 This is typically used to punish sloppy bonus claims, 10% being the usual figure. The percentage used is defined for the rally as a whole rather than for individual or classes of bonus. It always requires the rally team to tick the box manually. Only one such provision can be defined.
@@ -91,6 +97,6 @@ It is possible to impose a fixed points penalty, or DNF, in response to excessiv
 - we are not the Police. We don't have wide-ranging legal powers.
 - we are not the Police. We don't have massive funding and high-tech infrastructure.
 
-The speed monitored by us is calculated as (Check-in - Check-out - Rest) / CorrectedDistance. Distance is calculated using odometer readings, corrected if an odo check ride was performed. Example: Rally starts 0900. Roger records 1 hour rest bonus and checks-in at 1644 having travelled 323 miles. Rally time 7h 44, less rest = 6h 44. 323 / 6h 44 = 47.9mph.
+The speed monitored by us is calculated as (Check-in - Check-out - Rest) / CorrectedDistance. Distance is calculated using odometer readings, corrected if an odo check ride was performed. Example: Rally starts 0900. Roger records 1 hour rest bonus and checks-in at 1644 having travelled 323 miles. Rally time 7h 44, less rest = 6h 44. (323 / 6h 44) = 47.9mph.
 
-Did that involve any actual speeding? Who knows? Maybe it did, maybe it didn't, it's not relevant.
+Did that involve any actual speeding? Who knows? Maybe it did, maybe it didn't, that's just not relevant.
