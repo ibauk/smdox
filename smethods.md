@@ -100,3 +100,10 @@ It is possible to impose a fixed points penalty, or DNF, in response to excessiv
 The speed monitored by us is calculated as (Check-in - Check-out - Rest) / CorrectedDistance. Distance is calculated using odometer readings, corrected if an odo check ride was performed. Example: Rally starts 0900. Roger records 1 hour rest bonus and checks-in at 1644 having travelled 323 miles. Rally time 7h 44, less rest = 6h 44. (323 / 6h 44) = 47.9mph.
 
 Did that involve any actual speeding? Who knows? Maybe it did, maybe it didn't, that's just not relevant.
+
+## Summary
+ScoreMaster has been developed continuously since 2012 and will continue to be developed for many years to come. It's purpose is to ensure that rallies are run smoothly, hopefully without last minute upheavals, and its philosophy is that Rallymasters should be empowered and not restricted by it.
+
+Don't let your imagination be held back because "*it can't do X*". If you dream up a scoring mechanism you'd like to use that's not listed here, speak to Bob.
+
+Version: 2022-07-04
