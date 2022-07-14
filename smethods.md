@@ -7,17 +7,17 @@ This document is not concerned with *bonus claim* methods, only with the arithme
 This document is also not concerned with policy matters, it merely details what's practicable using the facilities provided.
 
 ## Some definitions
-Points
+**Points**
 : A points value is an integer (whole number), fractions are not allowed. In general a points value can be positive or negative.
 
-Bonus code
+**Bonus code**
 : A unique identifier comprising letters and digits only. Spaces and punctuation are forbidden. All letters must be uppercase. 
 
 As far as the system is concerned, bonus codes are alphanumeric even when they are all numeric. In order to keep them presented in the correct sequence they should all contain the same number of digits. Use leading '0's to pad the codes or start from, say, 11 or 111 instead of 1.
 
 It is not necessary (or perhaps even desirable) that bonuses should be coded with some sequence and you certainly don't need to include any kind of serial number. Each bonus is unique as far as the system is concerned and the codes stand alone. The only sequence that matters is the way they're presented on scorecards and in maintenance lists. Use your imagination: codes should be short (entrants will need to type them) but can be anything (uppercase) that you choose.
 
-Combo code
+**Combo code**
 : A unique identifier as with an ordinary bonus code. Letters may be upper or lowercase but AA23 is the same as aa23, Aa23 and aA23.
 
 ---
