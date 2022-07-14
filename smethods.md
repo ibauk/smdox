@@ -99,7 +99,7 @@ It is possible to impose a fixed points penalty, or DNF, in response to excessiv
 - we are not the Police. We don't have wide-ranging legal powers.
 - we are not the Police. We don't have massive funding and high-tech infrastructure.
 
-The speed monitored by us is calculated as (Check-in - Check-out - Rest) / CorrectedDistance. Distance is calculated using odometer readings, corrected if an odo check ride was performed. Example: Rally starts 0900. Roger records 1 hour rest bonus and checks-in at 1644 having travelled 323 miles. Rally time 7h 44, less rest = 6h 44. (323 / 6h 44) = 47.9mph.
+The speed monitored by us is calculated as CorrectedDistance / (Check-in - Check-out - Rest). Distance is calculated using odometer readings, corrected if an odo check ride was performed. Example: Rally starts 0900. Roger records 1 hour rest bonus and checks-in at 1644 having travelled 323 miles. Rally time 7h 44, less rest = 6h 44. (323 / 6h 44) = 47.9mph.
 
 Did that involve any actual speeding? Who knows? Maybe it did, maybe it didn't, that's just not relevant.
 
