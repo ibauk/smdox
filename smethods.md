@@ -4,7 +4,7 @@ ScoreMaster provides automatic processing for the scoring methods and penalties 
 
 This document is not concerned with *bonus claim* methods, only with the arithmetic involved in calculating a score.
 
-This document is also not concerned with policy matters, it merely details what's practicable using the facilities provided.
+This document is also not concerned with policy matters (somebody else can worry about that), it merely details what's practicable using the facilities provided.
 
 ## Some definitions
 **Points**
@@ -13,9 +13,9 @@ This document is also not concerned with policy matters, it merely details what'
 **Bonus code**
 : A unique identifier comprising letters and digits only. Spaces and punctuation are forbidden. All letters must be uppercase. 
 
-As far as the system is concerned, bonus codes are alphanumeric even when they are all numeric. In order to keep them presented in the correct sequence they should all contain the same number of digits. Use leading '0's to pad the codes or start from, say, 11 or 111 instead of 1.
+As far as the system is concerned, bonus codes are alphanumeric even when they are all numeric. In order to keep them presented in the "correct" sequence they should all contain the same number of digits. Use leading '0's to pad the codes or start from, say, 11 or 111 instead of 1.
 
-It is not necessary (or perhaps even desirable) that bonuses should be coded with some sequence and you certainly don't need to include any kind of serial number. Each bonus is unique as far as the system is concerned and the codes stand alone. The only sequence that matters is the way they're presented on scorecards and in maintenance lists. Use your imagination: codes should be short (entrants will need to type them) but can be anything (uppercase) that you choose.
+It is not necessary (or perhaps even desirable) that bonuses should be coded with some sequence and you certainly don't need to include any kind of serial number. Each bonus is unique as far as the system is concerned and each code stands alone. The only sequence that matters is the way they're presented on scorecards and in maintenance lists. Use your imagination: codes should be short (entrants will need to type them) but can be anything (uppercase) that you choose.
 
 **Combo code**
 : A unique identifier as with an ordinary bonus code. Letters may be upper or lowercase but AA23 is the same as aa23, Aa23 and aA23.
@@ -85,7 +85,7 @@ This is typically used to punish sloppy bonus claims, 10% being the usual figure
 ### Distance penalties
 Distance travelled can be used to penalise entrants. Two hard limits, not far enough and too far, can be used as DNF triggers. It is also possible to apply a points penalty for travelling too far as either a fixed number of points (> 250 miles = -500 points) or a number of points per mile. 
 
-Each rally has an official unit of distance, either miles or kilometres. Individual bikes' odometers will read either miles or kilometres and be converted by the system, if necessary, to the rally unit.  "Points per mile" will actually be points per kilometre in kilometre rallies.
+Each rally has an official unit of distance, either miles or kilometres. Individual odometers will read either miles or kilometres and be converted by the system, if necessary, to the rally unit.  "Points per mile" will actually be points per kilometre in kilometre rallies.
 
 ### Time penalties
 Each rally runs from the official start time to the official finish time. To allow for staggered starts, that timespan can be longer than the permitted number of hours. (eg. 8 hour rally runs from 0800 to 1800). An entrant finishing after his 8 hours or later than the official finish time is DNF.
@@ -106,6 +106,8 @@ Did that involve any actual speeding? Who knows? Maybe it did, maybe it didn't, 
 ## Summary
 ScoreMaster has been developed continuously since 2012 and will continue to be developed for many years to come. Its purpose is to ensure that rallies are run smoothly, hopefully without last minute upheavals, and its philosophy is that Rallymasters should be empowered and not restricted by it.
 
+The next major release will include the ability to report, and rank finishers on, points per mile (kilometre) rather than absolute points.
+
 Don't let your imagination be held back because "*it can't do X*". If you dream up a scoring mechanism you'd like to use that's not listed here, speak to Bob.
 
-Version: 2022-07-14
+Version: 2022-07-17 ScoreMaster v3.2
