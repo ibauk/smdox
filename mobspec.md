@@ -2,7 +2,7 @@
 
 This contains outline specifications for a mobile app to be used in connection with the ScoreMaster rally administration software.
 
-Version: 0.1 - Jan 2023
+Version: 0.2 - Jan 2023
 
 ## Audience
 Initially, this is aimed at the developers of ScoreMaster and the mobile app. At some point it might also include Rallymasters.
@@ -20,6 +20,7 @@ Using the MA should
 Using the MA could
 - calculate daylight/nightime for each bonus using local sunrise/sunset times
 - generate odo readings using GPS
+- preselect current bonus using GPS
 
 ## Rally team enhancements
 Using the MA should
