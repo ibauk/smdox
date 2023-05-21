@@ -113,4 +113,4 @@ The next major release will include the ability to report, and rank finishers on
 
 Don't let your imagination be held back because "*it can't do X*". If you dream up a scoring mechanism you'd like to use that's not listed here, speak to Bob.
 
-Version: 2022-07-17 ScoreMaster v3.2
+Version: 2023-05-17 ScoreMaster v3.3.1
