@@ -28,6 +28,9 @@ Each bonus scores a specific number of points.
 ## Variable bonus points
 Each bonus specifies a default value (which might be zero or even negative). At claim time the actual value of the bonus must be entered manually. This might be used for example when a bonus includes a clock face or a varying number of flags. This facility should be used sparingly as it has a significant impact on scoring efficiency.
 
+## Bonus is multiplier
+The points value of this bonus is used as a multiplier applied to the value of the most recently claimed bonus unless that bonus was itself a multiplier in which case the value is zero.
+
 ## Simple combination bonus
 A combination bonus (combo) specifies a list of underlying bonuses (which might include some* other combos). Each combo scores a specific, fixed, number of points. This is in addition to the scores of the underlying bonuses. Combos are claimed automatically, entrants don't need to claim them separately.
 
@@ -83,12 +86,12 @@ It is possible to specify a minimum number of points below which entrants would 
 This is typically used to punish sloppy bonus claims, 10% being the usual figure. The percentage used is defined for the rally as a whole rather than for individual or classes of bonus. It always requires the rally team to tick the box manually. Only one such provision can be defined.
 
 ### Distance penalties
-Distance travelled can be used to penalise entrants. Two hard limits, not far enough and too far, can be used as DNF triggers. It is also possible to apply a points penalty for travelling too far as either a fixed number of points (> 250 miles = -500 points), a number of points per mile or to exclude claims beyond the specified limit.
+Distance travelled can be used to penalise entrants. Two hard limits, not far enough and too far, can be used as DNF triggers. It is also possible to apply a points penalty for travelling too far as either a fixed number of points (> 250 miles = -500 points), a number of points per mile/kilometre or to exclude claims beyond the specified limit.
 
 Each rally has an official unit of distance, either miles or kilometres. Individual odometers will read either miles or kilometres and be converted by the system, if necessary, to the rally unit.  "Points per mile" will actually be points per kilometre in kilometre rallies.
 
 ### Limit bonus claims
-It is possible to set a limit on the number of bonus claims (not including reclaims) which may be submitted.
+It is possible to set a limit on the number of bonus claims (not including reclaims) which may be submitted. Claims beyond the limit will be excluded from scoring.
 
 ### Time penalties
 Each rally runs from the official start time to the official finish time. To allow for staggered starts, that timespan can be longer than the permitted number of hours. (eg. 8 hour rally runs from 0800 to 1800). An entrant finishing after his 8 hours or later than the official finish time is DNF.
@@ -109,8 +112,6 @@ Did that involve any actual speeding? Who knows? Maybe it did, maybe it didn't, 
 ## Summary
 ScoreMaster has been developed continuously since 2012 and will continue to be developed for many years to come. Its purpose is to ensure that rallies are run smoothly, hopefully without last minute upheavals, and its philosophy is that Rallymasters should be empowered and not restricted by it.
 
-The next major release will include the ability to report, and rank finishers on, points per mile (kilometre) rather than absolute points.
-
 Don't let your imagination be held back because "*it can't do X*". If you dream up a scoring mechanism you'd like to use that's not listed here, speak to Bob.
 
-Version: 2023-05-17 ScoreMaster v3.3.1
+Version: 2023-10-04 ScoreMaster v3.3.3
