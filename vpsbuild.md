@@ -1,6 +1,6 @@
 # Building a VPS from scratch
 
-We use a Debian or Ubuntu Virtual Private Server supplied by Fasthosts. This can be easily rebuilt/reinitialized by pressing a few buttons on the Fasthosts control panel. Having done that we need to do a few things for ourselves:-
+We use a Debian or Ubuntu Virtual Private Server supplied by Fasthosts. This can be easily rebuilt/reinitialized by pressing a few buttons on the Fasthosts control panel. Having done that we need to do a few things for ourselves:- It is assumed that you have basic competence with Debian and/or Ubuntu servers and will use 'sudo' as appropriate.
 
 ## Basic security
 - Change the password for *root*
@@ -35,16 +35,16 @@ We use a Debian or Ubuntu Virtual Private Server supplied by Fasthosts. This can
 - apt update
 
 ### as you were
-- apt install php8.1
-- apt install -y php8.1-fpm php8.1-cli 
-- nano /etc/php/8.1/fpm/pool.d/www.conf
+- apt install php8.3
+- apt install -y php8.3-fpm php8.3-cli 
+- nano /etc/php/8.3/fpm/pool.d/www.conf
 - uncomment listen.
 - usermod -aG www-data caddy
-- systemctl start php8.1-fpm
-- systemctl enable php8.1-fpm
-- nano /etc/caddy/Caddyfile and include 'php_fastcgi unix//run/php/php8.1-fpm.sock'
-- apt install php8.1-sqlite3
-- Edit /etc/php/8.1/apache2/php.ini and uncomment the various sqlite entries
+- systemctl start php8.3-fpm
+- systemctl enable php8.3-fpm
+- nano /etc/caddy/Caddyfile and include 'php_fastcgi unix//run/php/php8.3-fpm.sock'
+- apt install php8.3-sqlite3
+- Edit /etc/php/8.3/apache2/php.ini and uncomment the various sqlite entries
 - reboot
 
 ## Harden security
@@ -66,6 +66,16 @@ Run *dpkg-reconfigure -plow unattended-upgrades* and agree to unattended upgrade
 ## ebcfetch.service
 To run ebcfetch as a service using systemd do:-
 
+- cd ~
+- git clone https://github.com/ibauk/ebcfetch
+- apt install golang-go
+- cd ~/ebcfetch
+- go build
+- load a copy of https://github.com/ibauk/ebcfetch/blob/main/ebcfetch.service
+- edit appropriately
+- install this file in /etc/systemd/system
+- systemctl daemon-reload
+- systemctl enable ebcfetch.service
 
 
 
