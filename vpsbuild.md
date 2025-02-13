@@ -7,6 +7,7 @@ We use a Debian or Ubuntu Virtual Private Server supplied by Fasthosts. This can
 - useradd bob
 - mkhomedir_helper bob
 - usermod -aG sudo bob
+- passwd bob
 
 ## Toolchain build
 - apt install wget
@@ -77,6 +78,20 @@ To run ebcfetch as a service using systemd do:-
 - systemctl daemon-reload
 - systemctl enable ebcfetch.service
 
+## Additional users
+The production server hosting *ironbutt.co.uk* uses public key encryption as the only authentication method for remote access. New users can be setup using this procedure on Ubuntu servers:-
 
+- adduser *newuser*
+- usermod -aG sudo *newuser*
+- su - *newuser*
+- mkdir ~/.ssh
+- chmod 700 ~/.ssh
+- touch ~/.ssh/authorized_keys
+- chmod 600 ~/.ssh/authorized_keys
+- ssh-keygen -t ed25519
+- cat ~/.ssh/id_25519.pub >> ~.ssh/authorized_keys
 
+Assuming access from a Windows device, use SFTP or similar to copy ~/.ssh/id_ed25519 to local drive for use with Filezilla and/or Putty. In either case, the Windows app will want to convert the file to its own format.
+
+Yes I know that Putty includes a key pair generator but it all works so much better if you do things this way. The listed procedure can be adapted to suit the circumstances and/or skillset of the user.
 
