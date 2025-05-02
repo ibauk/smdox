@@ -39,7 +39,7 @@ If the rally includes even one bonus question/answer, the flag *useBonusQuestion
 If percentage penalties are to be used then the flag *usePercentPenalty* must be set to "true" and *valPercentPenalty* has the percentage to be applied.
 
 #### autoFinisher
-If a definite check-in process is used, this flag must be set to "false".
+If a definite check-in process is used, this flag must be set to "false". Setting this flag false means that hugely wrong odo readings will result in very high mileage recording.
 
 ---
 ScoreMaster v3.3.5 | Revised 2025-04-30
