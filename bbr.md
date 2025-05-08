@@ -1,4 +1,4 @@
-# BBR22 Rally Team
+# BBR Rally Team briefing
 
 ## Talking to entrants
 - rules is rules. Don't engage in 'what if' or 'yeah but'
@@ -6,27 +6,33 @@
 - judging decisions are final, no appeal
 
 ## Judging bonus claims
-- if claim time is critical, double-check time by clicking the email icon
 - if photo doesn't match bonus code, reject "wrong photo"
 - check restrictions, reject accordingly
+- exclude claim only when necessary - eg non-existent bonus code
+- if claim time is critical, double-check time by clicking the email icon
 - ignore wrong odo readings
 - keep notes of reject decisions with reasons
 
 ## Review rejected claims
+- check that bonus restrictions are correctly specified everywhere
 - use [Review scorecards] mechanism, flag as "Team is happy!"
 - different judges reassess to confirm rejection
 
-## Carpark odo readings
-- main odo is integer only, no decimal
-- odo check requires tenths
-- odo check, reset trip and use that
-- if odo u/s, ride the check anyway
+## Correcting wrong judgements
+-- use [Claims log] or [Review scorecards]
+-- choose new Decision
+-- save record
+-- consider using [Rebuild scorecards] to correct rankings
 
 ## Check-in
-- occurs in carpark. email flush before odo reading/finish time
-- 30 minutes to agree scorecard
+- occurs in carpark. email check/flush before odo reading/finish time
+- 30 minutes to agree scorecard after check-in
+
+## Email monitoring
+- at least two monitors
+- avoid "reading" new emails before ScoreMaster
 
 ## Manual claim processing
 - don't process for "at fault" claims
-- add claim using [Claims list]
+- add claim using [Claims log]
 - use sensible claim time if none available

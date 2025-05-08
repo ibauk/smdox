@@ -34,8 +34,8 @@ To ensure that novices understand what a rally is, what is expected of them, wha
 Odometers are used to record distances ridden in the rally. They should be in road-legal working order but we no longer advise the use of odo-check runs. If odometers are not available for whatever reason, substitute the use of satnav data.
 
 #### Check-out procedure
-Rally team will record odo at start AND get entrant to do bonus claim for odo start, confirm that it's all good.
+Rally team will record odo at start AND may get entrant to do bonus claim for odo start, confirm that it's all good.
 
 #### Check-in procedure
-Rally team will record odo at finish and confirm claims list.
+Rally team will record odo at finish and confirm claims list. Entrants will be asked to sign agreement with their scorecard.
 

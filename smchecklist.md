@@ -4,6 +4,7 @@
 ### [Rally setup & config] [Entrants] [Full Entrant records]
 Check that ALL the entrant records are loaded and that the email field contains the email address(es) they will use for claim submission.
 
+Check that any teams are identified and entrant records are set accordingly.
 
 ## Certificates
 ### [Rally setup & config] [Edit certificate content]
