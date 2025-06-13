@@ -56,6 +56,8 @@ At least one week before the rally begins, at least two independent reviews shou
 
 At least two days before the rally begins, ScoreMaster is set to live mode; *notbefore*: is set to rally start date; testing data cleared out
 
+Check that ScoreMaster is actually ready for live running by clicking [About ScoreMaster] [Show key settings and status of this rally].
+
 ### During the rally
 
 As riders arrive for sign-in, confirm the email address they will be using for bonus claiming. Check that the ScoreMaster Entrant number is the same as the flag given to the rider. Check that everyone signed-in is actually in the ScoreMaster database.
