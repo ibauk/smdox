@@ -9,15 +9,22 @@ We use a Debian or Ubuntu Virtual Private Server supplied by Fasthosts. This can
 - usermod -aG sudo bob
 - passwd bob
 
+Now quit then re-login as bob
+
 ## Toolchain build
-- apt install wget
-- wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz
+- wget https://go.dev/dl/go1.20.4.linux-amd64.tar.gz # Check for actual desired version
 - tar -C /usr/local -xzf go1.20.4.linux-amd64.tar.gz
 - export PATH=$PATH:/usr/local/go/bin
-- apt install imagemagick
+- include last statement in .profile for persistence
 - apt install git
+- on Debian not Ubuntu:  apt install build-essential
+- git clone https://github.com/ibauk/ebcimg
+- cd ebcimg
+- go mod tidy
+- go build
+- cd ..
 - git clone https://github.com/ibauk/ebcfetch
-- cd ebcfetch; go build
+- cd ebcfetch; go mod tidy; go build; cd ~
 - apt install sqlite3
 
 ## Caddy server - Debian not Ubuntu
