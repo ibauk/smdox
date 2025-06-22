@@ -2,13 +2,13 @@
 
 This contains outline specifications for a mobile app to be used in connection with the ScoreMaster rally administration software.
 
-Version: 0.2 - Jan 2023
+Version: 0.3 - Jun 2025
 
 ## Audience
 Initially, this is aimed at the developers of ScoreMaster and the mobile app. At some point it might also include Rallymasters.
 
 ## Background
-ScoreMaster is, as at January 2023, the adopted standard rally administration system used by rally teams throughout UK and continental Europe. Rally entrants currently make use of any email app to submit bonus claims in a standard format. The mobile app (MA) is being developed in order to replace the use of standard email apps in order to bring enhanced experiences to both rally entrants and rally teams.
+ScoreMaster is the adopted standard rally administration system used by rally teams throughout UK and continental Europe. Rally entrants currently make use of any email app to submit bonus claims in a standard format. The mobile app (MA) is being developed in order to replace the use of standard email apps in order to bring enhanced experiences to both rally entrants and rally teams.
 
 ## Entrant enhancements
 Using the MA should
@@ -16,6 +16,7 @@ Using the MA should
 - reduce keystrokes required to make bonus claims
 - take care of background transmission
 - keep adequate logs of claim submissions
+- send images in JPG format rather than HEIC, etc
 
 Using the MA could
 - calculate daylight/nightime for each bonus using local sunrise/sunset times
