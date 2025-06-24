@@ -136,6 +136,12 @@ Odometers are used to record distances ridden in the rally. Such distances are p
 
 The significance of actual claim time values varies from rally to rally and bonus to bonus but their relative values are used to control the sequence of claim processing. These values are also useful when identifying discrepancies in the scoring records.
 
+### Photo / image file(s)
+
+All bonus claims include at least one photo. Usually, there is only one image and, if there are several images, usually only the first one is considered but rally teams can decide for themselves.
+
+Almost all image formats can be processed by the software and are presented side-by-side with the relevant image from the rally book. Some newer phones can create images in formats which can't be processed by the software and when that happens an image is presented to the scoring judge stating that the original image can't be processed and inviting the judge to examine the original email. Such images usually can be read in the email window or using other system software. As a desperate last resort, ask the rider to set his phone's image format to JPEG.
+
 ### Monitoring rally mailbox
 
 It is necessary to monitor the rally mailbox during the rally to check for missed claims not present in ScoreMaster. Claims can be missed for three reasons: incorrectly formed Subject: line; incorrect ScoreMaster settings; accidental mailbox interference.
