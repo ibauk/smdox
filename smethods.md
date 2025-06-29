@@ -28,19 +28,21 @@ Each bonus scores a specific number of points.
 ## Variable bonus points
 Each bonus specifies a default value (which might be zero or even negative). At claim time the actual value of the bonus must be entered manually. This might be used for example when a bonus includes a clock face or a varying number of flags. This facility should be used sparingly as it has a significant impact on scoring efficiency.
 
-## Bonus is multiplier
+## Last Bonus multiplier
 The points value of this bonus is used as a multiplier applied to the value of the most recently claimed bonus unless that bonus was itself a multiplier in which case the value is zero.
 
 ## Simple combination bonus
-A combination bonus (combo) specifies a list of underlying bonuses (which might include some* other combos). Each combo scores a specific, fixed, number of points. This is in addition to the scores of the underlying bonuses. Combos are claimed automatically, entrants don't need to claim them separately.
+A combination bonus (combo) specifies a list of underlying bonuses (which might include some* other combos). Each combo scores a specific, fixed, number of points (or multipliers, see below). This is in addition to the scores of the underlying bonuses. Combos are claimed automatically, entrants don't need to claim them separately.
 
 *Any combos included as underlying bonuses must be coded alphanumerically lower than the current combo code. Combo "A12" cannot depend on combo "A13" or "B1".
 
 ## Variable combination bonus
-A variable combo specifies a minimum number of underlying bonuses (rather than 'all' for a simple combo). Each combo scores a specific number of points depending on the number of underlying bonuses scored between the minimum and all. A simple example:-
+A variable combo specifies a minimum number of underlying bonuses (rather than 'all' for a simple combo). Each combo scores a specific number of points or multipliers depending on the number of underlying bonuses scored between the minimum and all. A simple example:-
 
 Combo *CLUBS* has underlying bonuses *MANU*,*CHELSEA*,*ARSENAL*,*RANGERS*,*ROVERS*. The combo will be scored if at least three underlying bonuses are scored. The value of the combo is 100, 200 or 600 points. 
 
+## Multipliers
+Combos can be used to build a final score multiplier which, as the names suggest, will be used to multiply the final score. This can act as a major incentive to score certain combos. Multipliers can also be accrued using complex methods below.
 
 ## Questions & answers
 Ordinary bonuses may have associated questions which allow for the award of additional points when correctly answered. The question/answer will be worth a fixed number of points, the value being set for the rally as a whole rather than for individual bonuses. The extra points are only awarded if the underlying bonus claim succeeds.
@@ -98,20 +100,24 @@ Each rally runs from the official start time to the official finish time. To all
 
 Within the rally time window it's possible to impose points penalties, perhaps to encourage early check-in, either as a fixed number of points or as points per minute. Several such windows can be specified with different points values, they need not be confined to the end of the rally.
 
-### Speed penalties
-It is possible to impose a fixed points penalty, or DNF, in response to excessive speed. Golly, that's bold eh! Now, before you get all excited:-
+## Levels of scoring
 
-- we are not the Police. It's not our job to enforce the law.
-- we are not the Police. We don't have wide-ranging legal powers.
-- we are not the Police. We don't have massive funding and high-tech infrastructure.
+Entrants simply make individual bonus claims throughout the rally and ScoreMaster takes care of the resultant scoring calculations. It does so by following a sequence of levels as follows:-
 
-The speed monitored by us is calculated as CorrectedDistance / (Check-in - Check-out - Rest). Distance is calculated using odometer readings, corrected if an odo check ride was performed. Example: Rally starts 0900. Roger records 1 hour rest bonus and checks-in at 1644 having travelled 323 miles. Rally time 7h 44, less rest = 6h 44. (323 / 6h 44) = 47.9mph.
-
-Did that involve any actual speeding? Who knows? Maybe it did, maybe it didn't, that's just not relevant.
+1. Apply individual bonus score
+2. Apply any sequence score
+3. Apply Question/answer score
+4. Apply last bonus multiplier
+5. Apply bonus-modifying complex rules
+6. Apply combo scores
+7. Apply category-based complex rules
+8. Apply time penalties
+9. Apply distance penalties
+10. Apply final multipliers 
 
 ## Summary
 ScoreMaster has been developed continuously since 2012 and will continue to be developed for many years to come. Its purpose is to ensure that rallies are run smoothly, hopefully without last minute upheavals, and its philosophy is that Rallymasters should be empowered and not restricted by it.
 
 Don't let your imagination be held back because "*it can't do X*". If you dream up a scoring mechanism you'd like to use that's not listed here, speak to Bob.
 
-Version: 2023-10-04 ScoreMaster v3.3.3
+Version: 2025-06-30 ScoreMaster v3.4
