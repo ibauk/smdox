@@ -69,7 +69,9 @@ Relatively complex arithmetic can be used in this method. Speak to Bob if you wa
 ### Collection of bonuses
 This can be used to award extra points based on the number of bonuses scored within a category or the number of categories scored within a set. The criterion at this stage is simple group membership, order of scoring, etc are not relevant.
 
-This method may also be used to force DNF in the event of too many/not enough categories being scored.
+This method may also be used to force DNF in the event of too many/not enough categories being scored. DNF can also be forced if the ratio of bonuses scored in two categories differs from a specified ratio.
+
+This mechanism can also be adapted to exclude certain bonuses rather than forcing DNF.
 
 Speak to Bob if you want to know more.
 
@@ -104,20 +106,18 @@ Within the rally time window it's possible to impose points penalties, perhaps t
 
 Entrants simply make individual bonus claims throughout the rally and ScoreMaster takes care of the resultant scoring calculations. It does so by following a sequence of levels as follows:-
 
-1. Apply individual bonus score
-2. Apply any sequence score
-3. Apply Question/answer score
-4. Apply last bonus multiplier
-5. Apply bonus-modifying complex rules
-6. Apply combo scores
-7. Apply category-based complex rules
-8. Apply time penalties
-9. Apply distance penalties
-10. Apply final multipliers 
+1. Does this bonus extend an uninterrupted sequence? If not, apply accrued sequence value
+2. Calculate value of the current bonus and add any question/answer value
+3. Apply bonus-modifying complex rules
+4. Apply combo scores
+5. Apply category-based complex rules
+6. Apply time penalties
+7. Apply distance penalties
+8. Apply final multipliers 
 
 ## Summary
 ScoreMaster has been developed continuously since 2012 and will continue to be developed for many years to come. Its purpose is to ensure that rallies are run smoothly, hopefully without last minute upheavals, and its philosophy is that Rallymasters should be empowered and not restricted by it.
 
 Don't let your imagination be held back because "*it can't do X*". If you dream up a scoring mechanism you'd like to use that's not listed here, speak to Bob.
 
-Version: 2025-06-30 ScoreMaster v3.4
+Version: 2025-09-30 ScoreMaster v3.5
