@@ -1,8 +1,16 @@
 # ScoreMaster configuration
 
-Electronic Bonus Claiming, EBC, introduces some additional constraints to the hosting options. Firstly, internet access is necessary on the server machine and secondly. multiuser access options need some thought.
+ScoreMaster can be run with or without Electronic Bonus Claiming (EBC). Without involves manual inspection of bonus claims usually at the end of a rally. With EBC, claims are submitted and collected electronically and assessed by judges throughout the rally.
 
-## Hotel WiFi + live EBC
+The use of EBC means that internet access is necessary on the server machine.
+
+## Basic hosting
+
+The software consists of a small number of binary executables and can be made available to run on Windows, iOS or Linux. The program sources, written in [Go](https://go.dev/), are available from public repositories so are easily customised by anyone with the relevant technical skills.
+
+A Windows laptop is possibly the simplest setup.
+
+## Laptop + Hotel WiFi + live EBC
 
 When configured with live EBC fetching the SM server machine needs access to the internet in order to retrieve emails. Local area networking is generally disabled using the hotel-provided WiFi. This is not a problem when a single machine is used to conduct all scoring activities but if multiple device access is needed a private wireless router needs to be configured to provide the LAN capability.
 
@@ -12,8 +20,6 @@ The procedure is for the server to connect to the hotel WiFi (or a mobile phone 
 
 Have other devices connect to the private router's WiFi. They will not have internet access but they will be able to browse to the server using the noted IP address.
 
-## Public webhosting + live EBC
+## Public web hosting + live EBC
 
-Without EBC, any standard web hosting package will do. The requirements are PHP and a webserver, almost universally available.
-
-With EBC it's necessary to run a binary executable service as well as the standard application. The best solution is either to publish using a Virtual Private Server, available from a wide variety of ISPs, or to make a private server accessible from the internet.
+The best solution is to use either a private server or a virtual private server, available from a wide range of ISPs. Linux is the preferred OS as it will be cheaper and more flexible than other OSes.
